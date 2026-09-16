@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Viva Español 🇪🇸</title>
+
+<meta name="description"
+content="Viva Español — piękna i nowoczesna strona do nauki języka hiszpańskiego.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="#" class="logo">
+<span class="logo-mark">V</span>
+<span>Viva<span class="logo-red"> Español</span></span>
+</a>
+
+<nav class="nav-links">
+<a href="#nauka">Nauka</a>
+<a href="#slowka">Słówka</a>
+<a href="#quiz">Quiz</a>
+<a href="#o-nas">O stronie</a>
+</nav>
+
+<button class="theme-button" id="themeButton">
+☀️
+</button>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="location-pill">
+<span>🇪🇸</span>
+Español • Nivel A1
+</div>
+
+<h1>
+Mów po hiszpańsku
+<span>z pewnością siebie.</span>
+</h1>
+
+<p class="hero-description">
+Nauka hiszpańskiego może być prosta, przyjemna
+i pełna hiszpańskiego słońca. Zacznij już dziś.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#nauka" class="button button-primary">
+Zacznij naukę
+<span>→</span>
+</a>
+
+<a href="#quiz" class="button button-light">
+Zrób szybki quiz
+</a>
+
+</div>
+
+<div class="hero-mini-stats">
+
+<div>
+<strong>12</strong>
+<span>lekcji</span>
+</div>
+
+<div>
+<strong>120+</strong>
+<span>słówek</span>
+</div>
+
+<div>
+<strong>A1</strong>
+<span>poziom</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual">
+
+<div class="sun-circle"></div>
+
+<div class="palm palm-one">🌴</div>
+<div class="palm palm-two">🌴</div>
+
+<div class="spanish-card">
+
+<div class="card-top">
+<span>Buenos días</span>
+<span>☀️</span>
+</div>
+
+<div class="coffee-cup">
+☕
+</div>
+
+<div class="card-bottom">
+<small>DZISIAJ</small>
+<strong>10 nowych słówek</strong>
+
+<div class="mini-progress">
+<span id="miniProgress"></span>
+</div>
+
+<small id="progressText">
+0 / 10 ukończonych
+</small>
+</div>
+
+</div>
+
+<div class="floating-card floating-card-one">
+<span>🔥</span>
+<div>
+<strong id="streakNumber">1 dzień</strong>
+<small>Twoja seria</small>
+</div>
+</div>
+
+<div class="floating-card floating-card-two">
+<span>⭐</span>
+<div>
+<strong id="xpNumber">0 XP</strong>
+<small>Zdobyte dzisiaj</small>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats-section">
+
+<div class="stat">
+<div class="stat-icon red">📚</div>
+<div>
+<strong id="lessonsCompleted">0</strong>
+<span>ukończonych lekcji</span>
+</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon yellow">🗣️</div>
+<div>
+<strong id="wordsLearned">0</strong>
+<span>poznanych słówek</span>
+</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon green">🏆</div>
+<div>
+<strong id="quizPercentage">0%</strong>
+<span>średni wynik quizów</span>
+</div>
+</div>
+
+<div class="stat">
+<div class="stat-icon blue">🔥</div>
+<div>
+<strong id="currentStreak">1</strong>
+<span>dni nauki z rzędu</span>
+</div>
+</div>
+
+</section>
+
+
+<!-- NAUKA -->
+
+<section class="section" id="nauka">
+
+<div class="section-header">
+
+<div>
+<span class="section-label">TWÓJ PLAN</span>
+
+<h2>
+Nauka krok po kroku
+</h2>
+
+<p>
+Krótkie lekcje, które możesz zrobić nawet
+podczas przerwy.
+</p>
+</div>
+
+<span class="level-badge">
+A1 • Początkujący
+</span>
+
+</div>
+
+
+<div class="lesson-grid">
+
+<article class="lesson-card lesson-featured">
+
+<div class="lesson-number">
+01
+</div>
+
+<div class="lesson-emoji">
+👋
+</div>
+
+<span class="lesson-tag">
+START
+</span>
+
+<h3>
+¡Hola!
+</h3>
+
+<p>
+Powitania, pożegnania i podstawowe zwroty,
+których użyjesz każdego dnia.
+</p>
+
+<div class="lesson-info">
+<span>⏱ 8 min</span>
+<span>•</span>
+<span>10 słówek</span>
+</div>
+
+<button class="lesson-button" data-lesson="Powitania">
+Rozpocznij lekcję →
+</button>
+
+</article>
+
+
+<article class="lesson-card">
+
+<div class="lesson-number">
+02
+</div>
+
+<div class="lesson-emoji">
+🧑‍🤝‍🧑
+</div>
+
+<span class="lesson-tag orange">
+A1
+</span>
+
+<h3>
+Soy...
+</h3>
+
+<p>
+Naucz się przedstawiać siebie,
+mówić skąd jesteś i pytać o imię.
+</p>
+
+<div class="lesson-info">
+<span>⏱ 10 min</span>
+<span>•</span>
+<span>12 słówek</span>
+</div>
+
+<button class="lesson-button" data-lesson="Przedstawianie się">
+Rozpocznij lekcję →
+</button>
+
+</article>
+
+
+<article class="lesson-card">
+
+<div class="lesson-number">
+03
+</div>
+
+<div class="lesson-emoji">
+☕
+</div>
+
+<span class="lesson-tag yellow-tag">
+A1
+</span>
+
+<h3>
+En la cafetería
+</h3>
+
+<p>
+Zamów kawę, coś słodkiego i porozmawiaj
+w hiszpańskiej kawiarni.
+</p>
+
+<div class="lesson-info">
+<span>⏱ 12 min</span>
+<span>•</span>
+<span>15 słówek</span>
+</div>
+
+<button class="lesson-button" data-lesson="W kawiarni">
+Rozpocznij lekcję →
+</button>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- SŁÓWKA -->
+
+<section class="section vocabulary-section" id="slowka">
+
+<div class="section-header">
+
+<div>
+<span class="section-label">
+VOCABULARIO
+</span>
+
+<h2>
+Hiszpańskie słówka
+</h2>
+
+<p>
+Kliknij słówko, aby usłyszeć jego wymowę.
+</p>
+</div>
+
+<div class="search-wrapper">
+🔎
+<input
+id="searchInput"
+type="search"
+placeholder="Szukaj słówka..."
+>
+</div>
+
+</div>
+
+
+<div class="category-buttons">
+
+<button class="category active" data-category="all">
+Wszystkie
+</button>
+
+<button class="category" data-category="basic">
+Podstawy
+</button>
+
+<button class="category" data-category="people">
+Ludzie
+</button>
+
+<button class="category" data-category="food">
+Jedzenie
+</button>
+
+</div>
+
+
+<div id="vocabularyGrid" class="vocabulary-grid"></div>
+
+</section>
+
+
+<!-- QUIZ -->
+
+<section class="quiz-section" id="quiz">
+
+<div class="quiz-decoration decoration-one">
+✦
+</div>
+
+<div class="quiz-decoration decoration-two">
+✦
+</div>
+
+<div class="quiz-container">
+
+<div class="quiz-header">
+
+<span class="section-label light-label">
+MINI QUIZ
+</span>
+
+<h2>
+¿Qué tal?
+</h2>
+
+<p>
+Sprawdź, ile już potrafisz.
+</p>
+
+</div>
+
+
+<div class="quiz-card">
+
+<div class="quiz-top">
+
+<span id="questionNumber">
+PYTANIE 1 / 5
+</span>
+
+<span id="score">
+Wynik: 0
+</span>
+
+</div>
+
+<div class="quiz-progress">
+<span id="quizProgress"></span>
+</div>
+
+<h3 id="question">
+Jak powiesz „dzień dobry” po hiszpańsku?
+</h3>
+
+<div id="answers" class="answers"></div>
+
+<p class="quiz-hint">
+💡 Wybierz jedną odpowiedź.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta-section" id="o-nas">
+
+<div class="cta-content">
+
+<span class="section-label">
+TU ZACZYNA SIĘ TWOJA PODRÓŻ
+</span>
+
+<h2>
+Un poco cada día.
+<span>Dużo po czasie.</span>
+</h2>
+
+<p>
+10 minut hiszpańskiego dziennie może stać się
+początkiem czegoś naprawdę fajnego.
+</p>
+
+<a href="#nauka" class="button button-primary">
+Zaczynamy →
+</a>
+
+</div>
+
+<div class="cta-orange-circle">
+🇪🇸
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="footer-logo">
+<span class="logo-mark">V</span>
+<strong>Viva Español</strong>
+</div>
+
+<p>
+Nauka hiszpańskiego z odrobiną słońca. ☀️
+</p>
+
+<span>
+© <span id="year"></span> Viva Español
+</span>
+
+</footer>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
